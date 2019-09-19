@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="autor" content="Ateet Tiwari" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
     <title>Josh_Assignment</title>
   </head>
   <body>
@@ -25,22 +27,28 @@
       </div>
       <div></div>
     </header>
-    <section id="showcase card">
-      <div class="container">
-        <h2 class="captilise">Meta consectetus</h2>
-        <p>nulla pariatur. Nulla pariatur. Nulla voluptetem pariatur</p>
-        <button class="btn captilise">
-          Learn more <img src="images/arrow.png" />
-        </button>
+    <section id="showcase">
+      <div class="container card showcased">
+        <div class="cycle-slideshow slidingImages">
+          <img src="./images/banner_slider_01.jpg" />
+          <img src="./images/banner_slider_02.jpg" />
+        </div>
+        <div class="permanentText">
+          <h2 class="captilise">Meta consectetus</h2>
+          <p>nulla pariatur. Nulla pariatur. <br />Nulla voluptetem pariatur</p>
+          <button class="btn captilise">
+            <span>Learn more</span> <img src="images/arrow.png" />
+          </button>
+        </div>
       </div>
     </section>
-    <section id="information card">
-      <div class="container">
-        <h2 class="captilise">The connected lifestyle</h2>
-        <hr />
-        <ul class="mainList">
-          <li>
-            <div class="contentLeft">
+    <section id="information">
+      <div class="container card">
+        <div class="content">
+          <h2 class="captilise">The connected lifestyle</h2>
+          <hr />
+          <div id="boxes">
+            <div class="box boxed1">
               <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque
@@ -55,23 +63,19 @@
                 molestiae consequatur.
               </p>
               <button class="btn captilise">
-                Learn more <img src="images/arrow.png" />
+                <span>Learn more</span> <img src="images/arrow.png" />
               </button>
             </div>
-          </li>
-          <hr />
-          <li>
-            <div class="contentMiddle">
+            <div class="box boxed1">
               <h3 class="captilise">Lorem ipsum</h3>
-              <ul class="subList">
-                <li>
+              <div id="miniBoxes">
+                <div class="miniBox boxed1">
                   <img src="images/lifestyle_thmb_img01.png" />
                   <h3 class="captilise">connect</h3>
                   <p>Sdolor doloremque of sece ndolemque dolo</p>
                   <p>Edolo aemque of dol doloremque services</p>
-                </li>
-                <hr />
-                <li>
+                </div>
+                <div class="miniBox boxed2">
                   <img src="images/lifestyle_thmb_img02.png" />
                   <h3 class="captilise">experience</h3>
                   <p>Sdremque, aemquexy netwdolore redolore</p>
@@ -79,15 +83,13 @@
                     Holorquey sdoloredol cremque & rloremque connectivity dolore
                     doloremque
                   </p>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
-          </li>
-          <li>
-            <div class="contentRight">
+            <div class="box boxed2">
               <h3 class="captilise">Lorem ipsum dolor</h3>
-              <ul class="subList">
-                <li>
+              <div id="miniBoxes">
+                <div class="miniBox boxed1">
                   <img src="images/lifestyle_thmb_img03.png" />
                   <h3 class="captilise">discover</h3>
                   <p>
@@ -95,20 +97,19 @@
                     doloredata
                   </p>
                   <p>Hremque opportunities fdoloremque creation</p>
-                </li>
-                <hr />
-                <li>
+                </div>
+                <div class="miniBox boxed2">
                   <img src="images/lifestyle_thmb_img04.png" />
                   <h3 class="captilise">grow</h3>
                   <p>Prdoloreure for the fdoloremque services doloremque</p>
                   <p>
                     Tdoloreure and service doloremque
                   </p>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </section>
     <div class="container">
