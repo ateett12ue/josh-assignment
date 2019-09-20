@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="autor" content="Ateet Tiwari" />
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <title>Josh_Assignment</title>
   </head>
   <body>
+    <!--Header Start-->
     <header class="heading">
       <div class="container">
         <div class="branding">
-          <img src="images/logo.png" />
+          <img src="images/logo.png" alt="logo" />
         </div>
         <nav>
           <ul>
@@ -27,21 +27,38 @@
       </div>
       <div></div>
     </header>
+    <!--Header Ends-->
+
+    <!--Showcase Start-->
     <section id="showcase">
       <div class="container card showcased">
-        <div class="cycle-slideshow slidingImages">
-          <img src="./images/banner_slider_01.jpg" />
-          <img src="./images/banner_slider_02.jpg" />
+        <div
+          class="cycle-slideshow slidingImages"
+          data-cycle-fx="scrollHorz"
+          data-cycle-timeout="0"
+          data-cycle-prev="#prev"
+          data-cycle-next="#next"
+        >
+          <img src="./images/banner_slider_01.jpg" alt="slide1" />
+          <img src="./images/banner_slider_02.jpg" alt="slide2" />
         </div>
         <div class="permanentText">
           <h2 class="captilise">Meta consectetus</h2>
           <p>nulla pariatur. Nulla pariatur. <br />Nulla voluptetem pariatur</p>
           <button class="btn captilise">
-            <span>Learn more</span> <img src="images/arrow.png" />
+            <span>Learn more</span>
+            <img src="images/arrow.png" alt="arrow image" />
           </button>
+          <div class="imageControl">
+            <a href="#" id="prev"><img src="images/button.png" alt="prev"/></a>
+            <a href="#" id="next"><img src="images/button.png" alt="next"/></a>
+          </div>
         </div>
       </div>
     </section>
+    <!--Showcase End-->
+
+    <!--Information Start-->
     <section id="information">
       <div class="container card">
         <div class="content">
@@ -63,20 +80,21 @@
                 molestiae consequatur.
               </p>
               <button class="btn captilise">
-                <span>Learn more</span> <img src="images/arrow.png" />
+                <span>Learn more</span>
+                <img src="images/arrow.png" alt="arrow" />
               </button>
             </div>
             <div class="box boxed1">
               <h3 class="captilise">Lorem ipsum</h3>
               <div id="miniBoxes">
                 <div class="miniBox boxed1">
-                  <img src="images/lifestyle_thmb_img01.png" />
+                  <img src="images/lifestyle_thmb_img01.png" alt="thumb1" />
                   <h3 class="captilise">connect</h3>
                   <p>Sdolor doloremque of sece ndolemque dolo</p>
                   <p>Edolo aemque of dol doloremque services</p>
                 </div>
                 <div class="miniBox boxed2">
-                  <img src="images/lifestyle_thmb_img02.png" />
+                  <img src="images/lifestyle_thmb_img02.png" alt="thumb2" />
                   <h3 class="captilise">experience</h3>
                   <p>Sdremque, aemquexy netwdolore redolore</p>
                   <p>
@@ -90,7 +108,7 @@
               <h3 class="captilise">Lorem ipsum dolor</h3>
               <div id="miniBoxes">
                 <div class="miniBox boxed1">
-                  <img src="images/lifestyle_thmb_img03.png" />
+                  <img src="images/lifestyle_thmb_img03.png" alt="thumb3" />
                   <h3 class="captilise">discover</h3>
                   <p>
                     Udoloremque compos, doloremque, xzervice quality &
@@ -99,7 +117,7 @@
                   <p>Hremque opportunities fdoloremque creation</p>
                 </div>
                 <div class="miniBox boxed2">
-                  <img src="images/lifestyle_thmb_img04.png" />
+                  <img src="images/lifestyle_thmb_img04.png" alt="thumb4" />
                   <h3 class="captilise">grow</h3>
                   <p>Prdoloreure for the fdoloremque services doloremque</p>
                   <p>
@@ -112,28 +130,47 @@
         </div>
       </div>
     </section>
-    <div class="container">
-      <article id="boxes">
-        <h2 class="captalise">our customer</h2>
+    <!--Information End-->
+
+    <!--Article and Newsletter Start-->
+    <div class="container" id="boxes2">
+      <!--Article Start-->
+      <article class="box2 article">
+        <h2 class="captilise">our customer</h2>
         <hr />
         <p>
           unde omnis iste natus error sit voluptatem accusantium doloremque
           laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
           veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
           enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-          sed quia consequuntur. <span class="more">learn more</span>
+          sed quia consequuntur.
+          <span class="more"><a href="##">....more</a></span>
         </p>
-        <ul class="box">
-          <li><img src="images/custmr_logo01.png" /></li>
-          <li><img src="images/custmr_logo02.png" /></li>
-          <li><img src="images/custmr_logo03.png" /></li>
-          <li><img src="images/custmr_logo04.png" /></li>
-          <li><img src="images/custmr_logo05.png" /></li>
-          <li><img src="images/custmr_logo06.png" /></li>
-        </ul>
+        <div id="miniBoxes2">
+          <div class="miniBox2">
+            <img src="images/custmr_logo01.png" alt="our customer" />
+          </div>
+          <div class="miniBox2">
+            <img src="images/custmr_logo02.png" alt="our customer" />
+          </div>
+          <div class="miniBox2">
+            <img src="images/custmr_logo03.png" alt="our customer" />
+          </div>
+          <div class="miniBox2">
+            <img src="images/custmr_logo04.png" alt="our customer" />
+          </div>
+          <div class="miniBox2">
+            <img src="images/custmr_logo05.png" alt="our customer" />
+          </div>
+          <div class="miniBox2">
+            <img src="images/custmr_logo06.png" alt="our customer" />
+          </div>
+        </div>
       </article>
-      <aside class="newsletter">
-        <h2 class="captalise">in the news</h2>
+      <!--Article End-->
+      <!--Newsletter Start-->
+      <aside class="newsletter box2">
+        <h2 class="captilise">in the news</h2>
         <hr />
         <div class="news">
           <h4>Lorem ipsum dolor sit amet, consectetur adipis</h4>
@@ -142,7 +179,7 @@
             Cusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
             ab illo inventore veritatis et quasi architecto beatae vitae dicta
             sunt explicabo enim ipsam voluptatem quia voluptas sit asper...
-            <span class="more">continue reading</span>
+            <span class="more"><a href="##">....continue reading</a></span>
           </p>
         </div>
         <div class="news">
@@ -151,61 +188,121 @@
           <p>
             Cusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
             ab illo inventore veritatis et quasi architecto beatae vitae dicta
-            sunt explicabo enim ipsam voluptatem quia voluptas sit asper...
-            <span class="more">continue reading</span>
+            sunt explicabo enim ipsam voluptatem quia voluptas sit asper
+            <span class="more"><a href="##">....continue reading</a></span>
           </p>
         </div>
       </aside>
+      <!--Newsletter Ends-->
     </div>
-    <section id="resources">
-      <div class="container card">
-        <div class="photo">
-          <h2 class="captalise">media resources - photos</h2>
-          <hr />
-          <ul class="box">
-            <li><img src="images/photo-thumbnail.png" /></li>
-            <li><img src="images/photo-thumbnail.png" /></li>
-            <li><img src="images/photo-thumbnail.png" /></li>
-            <li><img src="images/photo-thumbnail.png" /></li>
-          </ul>
-          <p>
-            Cusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-            ab illo inventore veritatis et quasi architecto beatae vitae dicta
-            sunt explicabo enim ipsam voluptatem quia
-            <span class="more">continue reading</span>
-          </p>
-        </div>
+    <!--Article and Newsletter End-->
 
-        <div class="video">
-          <h2 class="captalise">media resources - videos</h2>
-          <hr />
-          <ul class="box">
-            <li><img src="images/video-thumbnail.png" /></li>
-            <li><img src="images/video-thumbnail.png" /></li>
-            <li><img src="images/video-thumbnail.png" /></li>
-            <li><img src="images/video-thumbnail.png" /></li>
-          </ul>
-          <p>
-            Cusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-            ab illo inventore veritatis et quasi architecto beatae vitae dicta
-            sunt explicabo enim ipsam voluptatem quia
-            <span class="more">continue reading</span>
-          </p>
+    <!--Resources Starts-->
+    <section class="resources">
+      <div class="container card">
+        <div id="resourcedBoxes">
+          <!--Photo Section Start-->
+          <div class="resourcedBox photo">
+            <h2 class="captilise">media resources - photos</h2>
+            <hr />
+            <div id="miniBoxes3">
+              <div class="miniBox3">
+                <a data-fancybox="gallery" href="images/full-photo.png"
+                  ><img src="images/photo-thumbnail.png" alt="photo"
+                /></a>
+              </div>
+              <div class="miniBox3">
+                <a data-fancybox="gallery" href="images/product.jpg"
+                  ><img src="images/photo-thumbnail.png" alt="photo"
+                /></a>
+              </div>
+              <div class="miniBox3">
+                <a data-fancybox="gallery" href="images/about.jpg"
+                  ><img src="images/photo-thumbnail.png" alt="photo"
+                /></a>
+              </div>
+              <div class="miniBox3">
+                <a data-fancybox="gallery" href="images/news.jpg"
+                  ><img src="images/photo-thumbnail.png" alt="photo"
+                /></a>
+              </div>
+            </div>
+            <p>
+              Cusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo enim ipsam voluptatem quia
+              <span class="more"><a href="##">....continue reading</a></span>
+            </p>
+          </div>
+          <!--Photo Section End-->
+
+          <!--Video Section Start-->
+          <div class="resourcedBox video">
+            <h2 class="captilise">media resources - videos</h2>
+            <hr />
+            <div id="miniBoxes3">
+              <div class="miniBox3">
+                <a
+                  data-fancybox="vgallery"
+                  href="https://www.youtube.com/watch?v=LfrPHVnefOo"
+                  ><img src="images/video-thumbnail.png" alt="video"
+                /></a>
+              </div>
+              <div class="miniBox3">
+                <a
+                  data-fancybox="vgallery"
+                  href="https://www.youtube.com/watch?v=dWqb-WqbGh8"
+                  ><img src="images/video-thumbnail.png" alt="video"
+                /></a>
+              </div>
+              <div class="miniBox3">
+                <a
+                  data-fancybox="vgallery"
+                  href="https://www.youtube.com/watch?v=TcdEOHV3PgA"
+                  ><img src="images/video-thumbnail.png" alt="video"
+                /></a>
+              </div>
+              <div class="miniBox3">
+                <a
+                  data-fancybox="vgallery"
+                  href="https://www.youtube.com/watch?v=W03a-8eFHdQ"
+                  ><img src="images/video-thumbnail.png" alt="video"
+                /></a>
+              </div>
+            </div>
+            <p>
+              Cusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo enim ipsam voluptatem quia
+              <span class="more"><a href="##">....continue reading</a></span>
+            </p>
+          </div>
+          <!--Video Section End-->
         </div>
       </div>
     </section>
+    <!--Resources End-->
 
+    <!--Footer Start-->
     <footer>
       <div class="container">
-        <ul>
-          <li class="captilise"><a href="#">home</a></li>
-          <li class="captilise"><a href="#">products</a></li>
-          <li class="captilise"><a href="#">customers</a></li>
-          <li class="captilise"><a href="#">news + events</a></li>
-          <li class="captilise"><a href="#">about us</a></li>
-        </ul>
+        <nav>
+          <ul>
+            <li class="captilise"><a href="#">home</a></li>
+            <li class="captilise"><a href="#">products</a></li>
+            <li class="captilise"><a href="#">customers</a></li>
+            <li class="captilise"><a href="#">news + events</a></li>
+            <li class="captilise"><a href="#">about us</a></li>
+          </ul>
+        </nav>
         <p class="lastComment">&copy;2011 Company Name. All rights reserved</p>
       </div>
     </footer>
+    <!--Footer End-->
+
+    <!--Plugin-->
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+    <script src="library/jquery.fancybox.min.js"></script>
   </body>
 </html>

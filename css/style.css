@@ -1,89 +1,36 @@
+/*Global Css Start*/
+
 body {
   background: url("../images/main_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   font: 15px/1.5 Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-header li {
-  float: left;
-  display: inline;
-  padding: 0px 20px 0 20px;
-  color: #666666;
-}
-
-header .branding {
-  float: left;
-}
-header nav {
-  float: right;
-  margin-top: 18px;
-}
 a {
   text-decoration: none;
   cursor: pointer;
   color: inherit;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .captilise {
   text-transform: uppercase;
-}
-.heading {
-  z-index: 1;
-  background: url("../images/header_bg01.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  padding-top: 18px;
-  padding-bottom: 4px;
-  min-height: 70px;
-  box-shadow: 0 4px 12px #888888;
 }
 
 .container {
   width: 72%;
   margin: auto;
   overflow: hidden;
-}
-
-.showcased {
-  min-height: 386px;
-  margin-top: 10px;
-  min-width: 958px;
-  box-shadow: 0 4px 12px #888888;
-}
-.slidingImages {
-  z-index: 0;
-  position: relative;
-}
-.permanentText {
-  z-index: 1;
-  float: right;
-  text-align: left;
-  margin-top: -5vh;
-  width: 285px;
-  position: absolute;
-  top: 35vh;
-  right: 31vh;
-}
-.permanentText h2 {
-  color: green;
-  font-weight: normal;
-}
-
-.permanentText p {
-  color: #666666;
-  text-transform: capitalize;
-  font-weight: 500;
 }
 
 button {
@@ -98,11 +45,13 @@ button {
   border: 1px solid grey;
   border-radius: 2px;
   box-shadow: 0 1px 5px #888888;
+  cursor: pointer;
 }
 
 button span {
   margin-left: -25px;
 }
+
 button img {
   margin-left: 40px;
   margin-right: -28px;
@@ -113,6 +62,92 @@ button img {
   margin-top: 25px;
   background-color: white;
 }
+
+.more {
+  color: green;
+  margin-left: 3%;
+  cursor: pointer;
+}
+
+/*Global Css End*/
+
+/*Header Css Start*/
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0px 20px 0 20px;
+  color: #666666;
+}
+
+header .branding {
+  float: left;
+}
+
+header nav {
+  float: right;
+  margin-top: 18px;
+}
+
+.heading {
+  z-index: 1;
+  background: url("../images/header_bg01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 18px;
+  padding-bottom: 4px;
+  min-height: 70px;
+  box-shadow: 0 4px 12px #888888;
+}
+
+/*Header Css End*/
+
+/*Showcase Css Start*/
+
+.showcased {
+  min-height: 386px;
+  margin-top: 10px;
+  min-width: 958px;
+  box-shadow: 0 4px 12px #888888;
+}
+
+.slidingImages {
+  z-index: 0;
+  position: relative;
+}
+
+.permanentText {
+  z-index: 1;
+  float: right;
+  text-align: left;
+  margin-top: -5vh;
+  width: 285px;
+  position: absolute;
+  top: 35vh;
+  right: 31vh;
+}
+
+.permanentText h2 {
+  color: green;
+  font-weight: normal;
+}
+
+.permanentText p {
+  color: #666666;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.imageControl {
+  margin-top: 30px;
+  margin-left: 235px;
+  cursor: pointer;
+}
+
+/*Showcase Css End*/
+
+/*Information Css Start*/
 
 section .content {
   margin: 20px;
@@ -125,8 +160,9 @@ section .content p {
 
 section .content h2 {
   color: green;
-  font-weight: none;
+  font-weight: normal;
 }
+
 .content hr {
   color: green;
   margin-top: -15px;
@@ -141,7 +177,7 @@ section .content h2 {
   margin-bottom: 15px;
 }
 
-#miniBoxes {
+.miniBoxes {
   margin: 0;
   padding: 0;
 }
@@ -153,6 +189,7 @@ section .content h2 {
   text-align: left;
   height: 295px;
 }
+
 #miniBoxes .miniBox img {
   margin-left: -7px;
 }
@@ -160,15 +197,18 @@ section .content h2 {
 #boxes h3 {
   margin-top: 9px;
   color: #666666;
+  font-weight: normal;
 }
 
 #miniBoxes h3 {
   color: green;
   margin-top: -5px;
 }
+
 .boxed1 {
   border-right: 1px solid #aaadaa;
 }
+
 .boxed2 {
   padding-left: 8px;
 }
@@ -176,3 +216,123 @@ section .content h2 {
 .box button {
   margin-top: 120px;
 }
+
+/*Information Css End*/
+
+/*Article and Newsletter Css Start*/
+
+.article {
+  max-width: 60%;
+  text-align: justify;
+}
+
+.newsletter {
+  max-width: 35%;
+  padding-left: 45px;
+}
+
+#boxes2 .box2 {
+  float: left;
+}
+
+#miniBoxes2 .miniBox2 {
+  max-width: 183px;
+  float: left;
+  width: 25%;
+  padding-right: 42px;
+}
+
+#boxes2 h2,
+h4,
+hr {
+  color: green;
+}
+
+#boxes2 hr {
+  margin-top: -12px;
+}
+
+#boxes2 .date {
+  color: #666666;
+  margin-top: -20px;
+}
+
+#boxes2 p {
+  font-size: 11px;
+  color: #666666;
+}
+
+.newsletter p {
+  margin-top: -10px;
+  padding-bottom: 7px;
+}
+
+/*Article and Newsletter Css End*/
+
+/*Resource Css Start*/
+
+#resourcedBoxes {
+  padding: 2px 15px 2px;
+}
+
+#resourcedBoxes .resourcedBox {
+  float: left;
+  width: 45%;
+  padding: 0 22px 0;
+}
+
+#miniBoxes3 .miniBox3 {
+  float: left;
+  width: 50%;
+}
+
+#resourcedBoxes .resourcedBox h2 {
+  color: green;
+}
+
+#resourcedBoxes .resourcedBox hr {
+  margin-top: -12px;
+  width: 390px;
+  float: left;
+}
+
+#resourcedBoxes .resourcedBox p {
+  color: #666666;
+  font-size: 11px;
+  padding-right: 40px;
+  padding-left: 10px;
+  text-align: justify;
+}
+
+.resources {
+  padding-bottom: 25px;
+}
+
+/*Resource Css End*/
+
+/*Footer Css Start*/
+
+footer {
+  background: url("../images/footer_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70px;
+}
+
+footer li {
+  display: inline;
+  font-size: 11px;
+  padding: 12px 8px 0 2px;
+  color: #c7c9c7;
+  margin-left: -2px;
+  font-weight: normal;
+}
+
+footer .lastComment {
+  float: right;
+  font-size: 9px;
+  color: #aaadaa;
+  margin-top: -15px;
+}
+
+/*Footer Css End*/
